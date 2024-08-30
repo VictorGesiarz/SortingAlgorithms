@@ -1,0 +1,60 @@
+
+<div class="side-menu">
+  <h2>OPTIONS</h2>
+  <hr class="break">
+
+  <p>·</p>
+
+  <p class="buttons">START<img src="assets/start.png" alt="start"  class="my-button" (click)="start_sort()"></p>
+
+  <p>·</p>
+
+  <p class="buttons">RESET<img src="assets/restart.png" alt="reset"  class="my-button" (click)="reset()"></p>
+
+  <p>·</p>
+
+  <p>ALGORITHM</p>
+  <select name="algorithms" class="algorithms" (change)="changeAlgorithm($event)">
+    <option value="insertion">Insertion</option>
+    <option value="selection">Selection</option>
+    <option value="merge">Merge</option>
+    <option value="bubble">Bubble</option>
+    <option value="cocktail">Cocktail Shaker</option>
+    <option value="radix">Radix</option>
+  </select>
+
+  <p>·</p>
+
+  <p>SPEED</p>
+  <div class="slidecontainer">
+    <input type="range" max="9" min="1" value="5" (change)="getSliderValue($event)" class="slider">
+  </div>
+
+  <p>·</p>
+
+  <p>SIZE</p>
+  <div class="slideccontainer">
+    <input type="range" max="{{max_length}}" min="{{min_length}}" value="{{length}}" (change)="changeSize($event)" class="slider">
+  </div>
+
+  <p>·</p>
+
+</div>
+
+<div class="main">
+  <h1 class="title">SORTING ALGORITHMS</h1>
+
+  <div class="list-container">
+    <div class="column" *ngFor="let item of list; index as i"
+         [style.height.px]="item"
+         [style.width.px]="column_width"
+         [style.border-radius.px]="column_width / 2"
+         [style.margin-left.px]="(column_width + 1) * i"
+         [class.green]="green1 == i || green2 == i"
+         [class.red]="red1 == i || red2 == i">
+
+        <!-- <p class="number">{{item}}</p> -->
+
+    </div>
+  </div>
+</div>

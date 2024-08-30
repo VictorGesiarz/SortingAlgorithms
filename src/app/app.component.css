@@ -1,0 +1,142 @@
+.side-menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#0a4a68, #020d13);
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  overflow: scroll;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.break {
+  margin-top: 40px;
+}
+
+.main {
+  padding-top: 50px;
+  padding-left: 8%;
+  margin-left: 250px;
+  color: #020d13;
+}
+
+.title {
+  font-size: 54px;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  width: 150px;
+  margin: auto;
+}
+.my-button {
+  cursor: pointer;
+  width: 35px;
+  margin-left: 10px;
+}
+
+.my-button:hover {
+  border-radius: 40%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 5px;
+  border-radius: 5px;
+  background: #ffffff;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #1386bd;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1386bd;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 100%;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(#0a4a68, #020d13);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #85a5b4;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b6c9d2;
+}
+
+
+.algorithms {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.algorithms:hover {
+  cursor: pointer;
+}
+
+
+.list-container {
+  position: absolute;
+  width: 70%;
+  height: 75%;
+}
+
+.column {
+  position: absolute;
+  width: 10px;
+  margin-left: 1px;
+  float: left;
+  bottom: 0;
+  background: linear-gradient(to top, #b2daed, #1386bd);
+}
+
+.green {
+  background: linear-gradient(to top, #e7f2d0, #86bd13);
+}
+.red {
+  background: linear-gradient(to top, #f272c9, #bd1386);
+}
+
+p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 30px;
+  }
+}
